@@ -134,7 +134,17 @@ async function start(server_home: string, requirements: RequirementsData, contex
         generateToStringPromptSupport: true,
         advancedGenerateAccessorsSupport: true,
         generateConstructorsPromptSupport: true,
-        generateDelegateMethodsPromptSupport: true
+        generateDelegateMethodsPromptSupport: true,
+        advancedExtractRefactoringSupport: true,
+        inferSelectionSupport: ["extractMethod", "extractVariable", "extractField"],
+        moveRefactoringSupport: true,
+        clientHoverProvider: true,
+        clientDocumentSymbolProvider: true,
+        gradleChecksumWrapperPromptSupport: true,
+        resolveAdditionalTextEditsSupport: true,
+        advancedIntroduceParameterRefactoringSupport: true,
+        actionableRuntimeNotificationSupport: true,
+        shouldLanguageServerExitOnShutdown: true
       },
       triggerFiles: getTriggerFiles()
     },
